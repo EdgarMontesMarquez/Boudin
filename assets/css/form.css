@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+  }
+  
+ 
+  @media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .respo{
+      width: 100%;
+      margin-top: 70px;
+      padding: 15px;
+      
+  
+    }
+    .titulo{
+      text-align: center;
+    }
+  }
+  .prueba{
+          column-count:1;
+  }
+  .card{
+      background-color:#fff ;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); 
+      padding: 20px;
+  }
+  #miTextarea {
+          max-width: 100%;
+          max-height: 150px;
+      }
+

@@ -1,0 +1,71 @@
+.gallery {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espacio entre las imágenes */
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Transición suave al hacer hover */
+}
+
+.gallery img:hover {
+  transform: scale(1.05); /* Escalado al hacer hover para efecto de zoom */
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333; /* Color de título ajustado */
+}
+
+.card-price {
+  font-size: 1rem;
+  color: #f33535;
+  font-weight: bold; /* Negrita para el precio */
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: #666; /* Color de descripción más suave */
+  margin-bottom: 15px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.btn.btn-primary {
+  background-color: #1b4f3e;
+  color: #fff;
+  border: 1px solid #1b4f3e;
+  padding: 10px 20px; /* Ajuste de padding para los botones */
+  font-size: 14px; /* Tamaño de fuente para los botones */
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.btn.btn-primary:hover {
+  background-color: #155136;
+  border-color: #155136;
+  color: #fff;
+  text-decoration: none;
+}
