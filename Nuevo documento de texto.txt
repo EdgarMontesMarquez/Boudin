@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Http\Controllers\Api\V1\Document;
+
+use App\Http\Controllers\Controller;
+use App\Models\DocumentType\DocumentType;
+use Illuminate\Http\JsonResponse;
+
+class ListDocumentTypeController extends Controller
+{
+    /**
+     * List all document types
+     *
+     * @return JsonResponse
+     */
+    public function __invoke(): JsonResponse
+    {
+        $types = DocumentType::all(['id', 'name']);
+
+        return response()->json([
+            'message' => 'Tipos de documento obtenidos exitosamente',
+            'data' => $types,
+        ]);
+    }
+}
